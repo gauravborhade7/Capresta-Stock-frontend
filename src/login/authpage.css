@@ -1,0 +1,59 @@
+/* Container styling */
+.email-Container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Headings */
+.email-Container h2 {
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+/* Input fields */
+.enterEmail {
+  width: 90%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border 0.2s ease-in-out;
+}
+
+.enterEmail:focus {
+  border: 1px solid #007BFF;
+  outline: none;
+}
+
+/* Buttons */
+.button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message */
+.showError {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
