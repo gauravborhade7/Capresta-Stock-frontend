@@ -199,7 +199,9 @@ h3 {
   display: block;
 }
 
-
+.rate{
+  color: red;
+}
 /* Search Location */
 .search-location {
   display: flex;
