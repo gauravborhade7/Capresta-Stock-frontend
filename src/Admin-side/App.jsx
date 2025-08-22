@@ -237,7 +237,7 @@ function App() {
       <h3>(Ready Stock Portal)</h3>
       <div className="company-info">
         <p><strong>CIN:</strong> <span>U51909MH2020PTC352852</span></p>
-        <p><strong>GSTIN:</strong> <span>27AAJCC2191E12R</span></p>
+        <p><strong>GSTIN:</strong> <span>27AAJCC2191E1ZR</span></p>
         <p><strong>FSSAI:</strong> <span>11523998001026</span></p>
       </div>
 
