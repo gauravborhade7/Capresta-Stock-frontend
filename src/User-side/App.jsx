@@ -33,7 +33,7 @@ export default function App() {
     try {
       setIsLoading(true);
       const response = await fetch(
-        `http://stock.caprestaindia.com/api/products/search?productName=${encodeURIComponent(productName)}&location=${encodeURIComponent(location)}`
+        `http://localhost:8080/api/products/search?productName=${encodeURIComponent(productName)}&location=${encodeURIComponent(location)}`
       );
 
       if (!response.ok) {
@@ -48,7 +48,7 @@ export default function App() {
       setShowPreorder(true);
     } catch (error) {
       console.error("Error fetching products:", error);
-      alert(error.message);
+      alert("Product not found");
       setShowTable(false);
       setShowPreorder(false);
       setFilteredProducts([]);
@@ -134,7 +134,7 @@ export default function App() {
 
       <div className="company-info">
         <p><strong>CIN:</strong> <span>U51909MH2020PTC352852</span></p>
-        <p><strong>GSTIN:</strong> <span>27AAJCC2191E12R</span></p>
+        <p><strong>GSTIN:</strong> <span>27AAJCC2191E1ZR</span></p>
         <p><strong>FSSAI:</strong> <span>11523998001026</span></p>
       </div>
 
