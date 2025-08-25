@@ -17,6 +17,8 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [showPreorder, setShowPreorder] = useState(false);
+  const [selectedLocation, setSelectedLocation] = useState("");
+
 
   // Refs
   const formRef = useRef(null);
@@ -259,19 +261,23 @@ function App() {
 
       <div className="search-location">
         <label htmlFor="search-location">📍 Select Location:</label>
-        <select
+        <input
+          list="location-options"
           id="search-location"
-          value={location}
-          onChange={(e) => setLocation(e.target.value)}
-        >
-          <option value="" disabled>
-            Select Location
-          </option>
-          <option>Jaipur</option>
-          <option>Ahmedabad</option>
-          <option>Sangli</option>
-          <option>Mumbai</option>
-        </select>
+          type="text"
+          placeholder="Select or type location"
+          value={selectedLocation}
+          onChange={(e) => setSelectedLocation(e.target.value)}
+        />
+        <datalist id="location-options">
+          {/* <option value="DELHI" /> */}
+          <option value="MUMBAI" />
+          <option value="AHMEDABAD" />
+          <option value="SANGLI" />
+          <option value="HINGOLI" />
+          <option value="BASMAT" />
+          <option value="NANDED" />
+        </datalist> 
       </div>
 
       {/* Form */}

@@ -161,7 +161,7 @@ export default function App() {
 
       <div className="search-location">
         <label htmlFor="search-location">📍 Select Location:</label>
-        <select
+        {/* <select
           id="search-location"
           value={selectedLocation}
           onChange={(e) => setSelectedLocation(e.target.value)}
@@ -171,8 +171,27 @@ export default function App() {
           <option>Ahmedabad</option>
           <option>Sangli</option>
           <option>Mumbai</option>
-        </select>
+        </select> */}
+
+<input
+          list="location-options"
+          id="search-location"
+          type="text"
+          placeholder="Select or type location"
+          value={selectedLocation}
+          onChange={(e) => setSelectedLocation(e.target.value)}
+        />
+        <datalist id="location-options">
+          {/* <option value="DELHI" /> */}
+          <option value="MUMBAI" />
+          <option value="AHMEDABAD" />
+          <option value="SANGLI" />
+          <option value="HINGOLI" />
+          <option value="BASMAT" />
+          <option value="NANDED" />
+        </datalist>        
       </div>
+      
 
       <div className="button-row">
         <button type="submit" onClick={searchProduct}>Search</button>

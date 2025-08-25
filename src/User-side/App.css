@@ -67,7 +67,7 @@ body::before {
   /* margin-top: -5px; */
   position: absolute;
   top: 31px;
-  right: 926px;
+  right: 860px;
 }
 
 /* Container */
@@ -209,7 +209,7 @@ h3 {
   align-items: center;
 }
 
-.search-location label {
+.search-location input {
   font-weight: bold;
   margin-bottom: 8px;
   margin-right: 45px;
@@ -217,7 +217,7 @@ h3 {
   color: #222;
 }
 
-.search-location select {
+.search-location input {
   padding: 12px 16px;
   border-radius: 10px;
   border: 2px solid #6366f1;
@@ -229,7 +229,7 @@ h3 {
   transition: 0.3s ease;
 }
 
-.search-location select:focus {
+.search-location input:focus {
   border-color: #4f46e5;
   outline: none;
   box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
@@ -682,7 +682,7 @@ tr:hover td {
   .Company-Logo {
     position: relative !important;
     top: auto !important;
-    right: auto !important;
+    right: 855px !important;
     display: block;
     margin: 0 auto 15px auto;
     height: 70px !important;
@@ -753,7 +753,7 @@ tr:hover td {
     padding: 0 5px !important;
   }
 
-  .search-location label {
+  .search-location input {
     font-weight: 600 !important;
     font-size: 14px !important;
     margin-bottom: 6px !important;
@@ -762,7 +762,7 @@ tr:hover td {
     margin-right: 0 !important;
   }
 
-  .search-location select {
+  .search-location input {
     width: 100% !important;
     font-size: 16px !important;
     padding: 12px 15px !important;
